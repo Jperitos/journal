@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f4f9;
+}
+
+.container {
+    display: flex;
+    width: 100%; /* Make the width relative */
+    max-width: 2000px; /* Adjusted for large screens */
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px; /* Added padding */
+}
+
+.welcome-section {
+    flex: 1;
+    background: rgb(36,0,18);
+    background: linear-gradient(10deg, rgba(36,0,18,1) 0%, rgba(9,24,121,1) 48%, rgba(0,151,255,1) 94%);
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-text h1 {
+    font-size: 2vw; 
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 1vw; 
+    line-height: 1.6;
+    color: #fff;
+}
+
+.form-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: ;
+}
+
+.form-section h2 {
+    font-size: 2.5vw; /* Responsive font size */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2vw; /* Responsive font size */
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2vw; /* Responsive font size */
+}
+
+button.btn {
+    padding: 15px;
+    background-color: #003bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2vw; /* Responsive font size */
+    margin-bottom: 20px;
+}
+
+button.btn:hover {
+    background-color: #005aff;
+}
+
+button.social-btn {
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2vw; /* Responsive font size */
+    border: none;
+}
+
+button.facebook {
+    background-color: #3b5998;
+    color: white;
+    margin-bottom: 10px;
+}
+
+button.gmail {
+    background-color: #dd4b39;
+    color: white;
+}
+
+button.social-btn:hover {
+    opacity: 0.9;
+}
+
+.separator {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.separator:before, .separator:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.separator:before {
+    left: 0;
+}
+
+.separator:after {
+    right: 0;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    font-size: 1vw; /* Responsive font size */
+}
+
+a {
+    color: #003bff;
+    text-decoration: none;
+    font-size: 1vw; /* Responsive font size */
+}
+
+a:hover {
+    text-decoration: underline;
+}
