@@ -44,9 +44,6 @@ nav {
     margin-right: 20px;
 }
 
-.nav-links li {
-    margin: 0 15px;
-}
 
 .nav-links a {
     text-decoration: none;
@@ -129,6 +126,9 @@ textarea {
     cursor: pointer;
     border: none;
     margin-bottom: 20px;
+}
+.submit-btn :hover{
+    background-color: #002366;
 }
 
 .footer-text {
