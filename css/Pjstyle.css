@@ -127,8 +127,10 @@ textarea {
     border: none;
     margin-bottom: 20px;
 }
-.submit-btn :hover{
+
+.submit-btn:hover {
     background-color: #002366;
+    color: white;
 }
 
 .footer-text {
