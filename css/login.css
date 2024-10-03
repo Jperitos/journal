@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+/* log */ 
+.container{
+    display: flex;
+    width: 1500px;
+    height: 85vh;
+    margin-top: 80px;
+   
+}
+.left{
+    border-radius: 10px 0 0 10px;
+    width: 50%;
+    height: 100%;
+    background-color:#d6e8ee ;
+}
+.log{
+    padding-top: 5%;
+    width:auto;
+    display: flex;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.back {
+    position: absolute; 
+    top: 150px;        
+    left: 220px;      
+  }
+  
+  .back a img {
+    width: 50px;        
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .back a img:hover {
+    transform: scale(1.1); 
+    opacity: 0.8;         
+  }
+  
+  .back a img:active {
+    transform: scale(0.95); 
+  }
+  
+.login-input{   
+    margin-top: 50px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-inline: auto;padding: 20px;
+}
+
+.login-input input{
+    width: 100%;
+    margin-block: 10px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    padding-left: 10px;
+
+}
+.log-button{
+    width: 50%;
+    margin-inline: auto;
+    height: 40px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #1346b3;
+    display: flex;
+    color: #ffffff;
+    font-size: 1rem;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    
+}
+.log-button:hover{
+    background-color: #0051ff ;
+    cursor: pointer;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-block: 50px;
+  }
+
+  .separator::before,
+  .separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #000;
+    margin: 0 10px;
+  }
+
+  .separator span {
+    white-space: nowrap;
+  }
+
+  .icon {
+    display: flex;
+    margin-block: 10px;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .icon i {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .icon i:hover {
+    color: #007bff; 
+    cursor: pointer;
+  }
+  .signup{
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+    font-size: 1.2rem;
+  }
+  .signup span{
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* log-right */
+
+  .right{
+    background-color: #5eacde;
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+  }
+  .right-logo{
+    display: flex;
+    gap: 5px;
+  }
+  .right-logo img{
+    width: 5%;
+  }
+
+  .logo-right h3{
+    font-size: 1rem;  
+    
+  }
+  .right-image img{
+   position: relative;
+   right: 150px;
+   top: 30px;
+   max-width: 1000px;
+  }
+  .right-text{
+    display: flex;
+    justify-content: center;
+  }
+  .right-text p{
+    font-size: 1rem;
+  }
+
+  /* signup */
+  .right1{
+    background-color: #5eacde;
+    width: 50%;
+    border-radius: 10px 0  0 10px;
+    padding: 20px;
+  }
+
+  .left1{
+    border-radius: 0 10px 10px 0;
+    width: 50%;
+    height: 100%;
+    background-color:#d6e8ee ;
+}
+  .log1{
+    padding-top: 3%;
+    width:auto;
+    display: flex;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-input1{
+    margin-top: 20px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-inline: auto;padding: 20px;
+  }
+  .login-input1 input{
+    width: 100%;
+    margin-block: 10px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    padding-left: 10px;
+}
+
+.separator1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-block: 20px;
+  }
+
+  .separator1::before,
+  .separator1::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #000;
+    margin: 0 10px;
+  }
+
+  .separator1 span {
+    white-space: nowrap;
+  }
+  .icon1 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .icon1 i {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .icon1 i:hover {
+    color: #007bff; 
+    cursor: pointer;
+  }
+  .signup1{
+    display: flex;
+    justify-content: center;
+    margin-block: 10px;
+    font-size: 1.2rem;
+  }
+  .login-link{
+    text-decoration: none;
+    color: #000;
+  }
+  .login-link :hover{
+    color: #007bff;;
+  }
+  .signup1 span{
+    font-weight: bold;
+    cursor: pointer;
+  }

@@ -39,41 +39,52 @@ nav {
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
-    margin-right: 20px;
-}
+    position: relative;
+    right: 50px;
+    gap: 50px; 
 
+}
 
 .nav-links a {
     text-decoration: none;
     color: black;
     font-size: 18px;
 }
-
-.header-homepage {
-    display: flex;
+.nav-links a:active{
+    color:#38b6ff;
 }
 
-.btn {
-    background-color: #002366;
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.go-pro-btn {
+    background-color: #00aaff;
     color: white;
     border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin-left: 10px;
+    padding: 8px 16px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.login-btn,
-.signup-btn {
-    background-color: #002366;
-    font-size: 16px;
+.go-pro-btn:hover {
+    background-color: #008fcc;
 }
 
-.login-btn:hover, .signup-btn:hover{
-    background-color: #0747be;
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
 }
+
+.icons img {
+    font-size: 20px;
+    cursor: pointer;
+}
+
 
 main {
     margin-top: 50px;
@@ -122,8 +133,8 @@ textarea {
 }
 
 .submit-btn {
-    background-color: #cccccc;
-    color: #333;
+    background-color: #002366;
+    color: white;
     border-radius: 50px;
     font-size: 16px;
     padding: 10px 25px;
@@ -133,13 +144,7 @@ textarea {
 }
 
 .submit-btn:hover {
-    background-color: #002366;
-    color: white;
+    background-color: #023594;
+    color: rgb(0, 0, 0);
 }
 
-.footer-text {
-    font-size: 16px;
-    color: #888;
-    margin-top: 20px;
-    text-align: center; 
-}
