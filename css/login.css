@@ -193,18 +193,16 @@ body {
     background-color:#d6e8ee ;
 }
   .log1{
-    padding-top: 3%;
     width:auto;
     display: flex;
-    font-size: 4rem;
-    font-weight: bold;
     margin-top: 10px;
+    font-size: 3rem;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
   }
 
   .login-input1{
-    margin-top: 20px;
     font-size: 1rem;
     display: flex;
     flex-direction: column;

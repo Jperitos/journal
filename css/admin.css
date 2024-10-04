@@ -1,0 +1,180 @@
+
+*{
+   
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #d6e8ee;
+}
+.sidebar {
+    padding-top:20px ;
+    z-index: 100;
+    position: fixed;
+    height: 100%;
+    width: 15%; 
+    background-color: #210950;
+    text-align: center;
+    color: white;
+    line-height: 3;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.sidebar h3{
+font-weight: 800;
+}
+.menu{
+   
+    line-height: 4;
+    height: 50%;
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(127, 10, 182);
+}
+}
+.sidebar li{
+    text-align: center;
+list-style: none;
+}
+
+.profile{
+    position: relative;
+    top: 300px;
+}
+.wrapper {
+position: relative;
+margin: 0 auto;
+padding: 20px;
+padding-left: 50px;
+width: 87%;
+height: 100vh;
+float: right;
+margin-left: 78px; 
+}
+
+/* sections */
+/* Hide all sections by default */
+section {
+    display: none;
+   
+}
+
+/* Show the home section by default */
+#home-section {
+    display: block;
+    padding: 20px;
+
+}
+
+.accounts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.count{
+    background-color: #97cadb;
+    border-radius: 30px;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom:20px;
+}
+
+.count p{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+/* table container */
+/* Table container */
+.table-container,.account-container {
+    width: 100%;
+    margin: 20px 0;
+    background-color: transparent;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border-spacing: 50px;
+  
+    
+}
+
+/* Table header styling */
+th {
+    background-color: #0D3A64; 
+    color: #ffffff; 
+    padding: 1.5rem;
+    text-align: center;
+    border: 10px solid #d6e8ee; 
+}
+
+
+td {
+    background-color: #b2e0f4; 
+    color: #0D3A64; 
+    padding: 1.5rem;
+    text-align: center;
+    border: 10px solid #d6e8ee;
+}
+
+tr:hover td {
+    background-color: #99cfe0; /
+}
+/* ACCOUNT SECTION CSS */
+
+/* Account section button styling */
+.account-container button {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width:150px;
+}
+.actions{
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+}
+.view-btn{
+   
+    background-color: #00a455;
+}
+
+.edit-btn{
+    background-color: #e2d630;
+}
+
+.remove-btn{
+    background-color: #c6302c;
+}
+
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) {
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

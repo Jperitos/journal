@@ -6,6 +6,7 @@
     <title>MindScript</title>
     <link rel="stylesheet" href="css/homepage.css" />
     <link rel="icon" href="image/book-reader-solid-24.png" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <header>
@@ -15,9 +16,9 @@
       </div>
 <nav>
     <nav class="nav-links">
-        <a href="#" class="nav-link">Home</a>
+        <a href="user-home.html" class="nav-link">Home</a>
         <a href="#" class="nav-link">My Journal</a>
-    </nav>
+      </nav>
         
        <div class="header-actions">
          <div class="icons">
@@ -32,15 +33,63 @@
 
     <main>
       <section class="story-section">
-        <h2>Welcome!</h2>
+        <h2>Welcome Damoslo!</h2>
         <h5>Where Your Thoughts Find Their Story</h5>
-        <textarea placeholder="Why Not Share Your Story Here Today?"></textarea>
+        
+        <input type="text" class="entry-title" placeholder="Entry Title">
+        <!-- <div class="date-display">
+          <span id="liveDate"></span>
+      </div> -->
+      <button class="toggle-toolbar-btn" onclick="toggleToolbar()">•••</button>
 
-        <div class="character-count">0/10000</div>
+<div class="toolbar-container hidden">
+    <div class="toolbar">
+        <label for="fontStyle">Font: </label>
+        <select id="fontStyle" onchange="format('fontName', this.value)">
+            <option value="Arial">Arial</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
 
-        <button class="submit-btn">Save</button>
+        <label for="fontSize">Size: </label>
+        <select id="fontSize" onchange="format('fontSize', this.value)">
+            <option value="1">10pt</option>
+            <option value="2">12pt</option>
+            <option value="3">14pt</option>
+            <option value="4">16pt</option>
+            <option value="5">18pt</option>
+            <option value="6">24pt</option>
+        </select>
+
+        <button onclick="format('bold')"><strong>B</strong></button>
+        <button onclick="format('italic')"><em>I</em></button>
+        <button onclick="format('underline')"><u>U</u></button>
+
+        <button onclick="format('justifyLeft')"><i class='bx bx-align-left'></i></button>
+        <button onclick="format('justifyCenter')"><i class='bx bx-align-middle'></i></button>
+        <button onclick="format('justifyRight')"><i class='bx bx-align-right'></i></button>
+
+        <button onclick="format('insertOrderedList')">Ordered List</button>
+        <button onclick="format('insertUnorderedList')"><i class='bx bx-dots-vertical-rounded'></i></button>
+
+        <button onclick="format('createLink', prompt('Enter URL:'))">Link</button>
+
+        <button onclick="format('removeFormat')">Clear</button>
+    </div>
+</div>
+
+        <div class="editor" contenteditable="true" aria-placeholder=" Why Not Share Your Story Here Today?">
+      </div>
+   
+        <div class="char-counter">0/10000</div>
+        <button class="save-btn">Save</button>
+  
        
       </section>
     </main>
+
+
+    <script src="javascript/text.js"></script>
   </body>
 </html>
