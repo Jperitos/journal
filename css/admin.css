@@ -201,7 +201,7 @@ section {
 }
 
 .table tr:hover td {
-    background-color: #99cfe0;
+    background-color: #d5edf5ad;
     cursor: pointer;
 }
 
@@ -237,7 +237,9 @@ section {
     width: 80%;
     height: auto;
 }
-
+#subscription-section h5{
+    margin-block: 1.5rem;
+}
 /* settings section css */
 .profile-container {
     background-color: #FFFFFF;   
