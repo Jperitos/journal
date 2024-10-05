@@ -25,10 +25,12 @@ body{
 }
 
 .sidebar h3 {
+    margin-top: 1.5rem;
     font-weight: 800;
 }
 
 .menu {
+    margin-top: 2rem;
     margin-right: 1rem;
     line-height: 4;
     height: 50%;
@@ -53,7 +55,18 @@ body{
 
 .profile{
     position: relative;
-    top: 300px;
+    top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-pic-sidebar{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+
+
 }
 .wrapper {
 position: relative;
@@ -262,7 +275,7 @@ section {
 
 .update-btn {
     position: relative;
-    left: 70%;
+    left: 60%;
     background-color: #0D3A64; 
     color: #FFFFFF; 
     border: none;
